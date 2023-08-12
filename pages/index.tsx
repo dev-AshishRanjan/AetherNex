@@ -2,6 +2,9 @@ import type { NextPage } from 'next';
 import styles from '../styles/Home.module.scss';
 import { useEffect, useState } from "react";
 
+interface ExtendedNavigator extends Navigator {
+  connection?: Connection;
+}
 interface Connection {
   downlink?: number;
 }
@@ -58,7 +61,7 @@ const Home: NextPage = () => {
     MeasureConnectionSpeed();
 
     // Use navigator.connection to get estimated internet speed
-    const connection: Connection = navigator.connection || {};
+    const connection: Connection | any = (navigator as ExtendedNavigator).connection;
     if (connection.downlink) {
       const estimatedSpeed = connection.downlink;
       setNavigatorSpeed(estimatedSpeed.toFixed(2));
