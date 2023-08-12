@@ -1,3 +1,38 @@
+![AetherNex](https://socialify.git.ci/dev-AshishRanjan/AetherNex/image?description=1&descriptionEditable=A%20place%20for%20Developers&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=light)
+
+<div align="center">
+ <p>
+   
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=dev-AshishRanjan%2FAetherNex%20&countColor=%23263759&style=flat)
+![GitHub forks](https://img.shields.io/github/forks/dev-AshishRanjan/AetherNex)
+![GitHub Repo stars](https://img.shields.io/github/stars/dev-AshishRanjan/AetherNex)
+![GitHub contributors](https://img.shields.io/github/contributors/dev-AshishRanjan/AetherNex)
+![GitHub last commit](https://img.shields.io/github/last-commit/dev-AshishRanjan/AetherNex)
+  
+![GitHub repo size](https://img.shields.io/github/repo-size/dev-AshishRanjan/AetherNex)
+
+![Github](https://img.shields.io/github/license/dev-AshishRanjan/AetherNex)
+![GitHub issues](https://img.shields.io/github/issues/dev-AshishRanjan/AetherNex)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/dev-AshishRanjan/AetherNex)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/dev-AshishRanjan/AetherNex)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/dev-AshishRanjan/AetherNex)
+
+ </p>
+</div>
+
+---
+
+<p align="center">
+  <img align="center" src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Welcome+to+AetherNex+!;Let's+Build+our+own+Together;Thanks+for+Contributing;Check+you+Internet+Speed;Check+our+website"
+ <img src= 'https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2.5'/>
+</p>
+
+---
+
+# AetherNex
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
