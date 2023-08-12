@@ -1,0 +1,28 @@
+{
+  "theme_color": "rgba(0,0,0,0)",
+  "background_color": "rgba(0,0,0,0)",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "AetherNex",
+  "short_name": "AetherNex",
+  "description": "Introducing AetherNex, a cutting-edge solution that merges advanced browser technology and meticulous measurement strategies. This exceptional tool offers a comprehensive view of network performance, providing insightful assessments of your connectivity's potential. AetherNex seamlessly combines real-time estimations and precise measurements, ensuring a holistic understanding of your internet capability. From informed decisions to technical diagnostics, elevate your insights with the innovation and elegance of AetherNex.",
+  "icons": [
+    {
+      "src": "/icons/icon_256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon_512.png",
+      "sizes": "48x48",
+      "type": "image/x-icon",
+      "purpose": "maskable"
+    }
+  ]
+}

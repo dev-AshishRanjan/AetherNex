@@ -1,0 +1,38 @@
+@use "mixins";
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Big+Shoulders+Stencil+Text:wght@500&family=Festive&family=Inter&family=Lobster+Two:wght@400;700&family=Montserrat&family=Poppins:wght@300&family=Roboto+Mono&family=Sirin+Stencil&family=Splash&family=Stylish&family=Supermercado+One&family=Titillium+Web&family=Ubuntu:wght@300;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--primary-text);
+  font-family: "Montserrat",monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    --primary-bg-1:rgb(26, 26, 26);
+    --primary-bg-2:rgb(40, 40, 40);
+    --primary-bg-3:rgb(55, 55, 55);
+    --final-speed:rgb(255, 161, 22);
+    --primary-text:rgb(0, 184, 163);
+    --texture:url("/bg7.png") no-repeat center center / cover;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root{
+    --primary-bg-1:rgb(193, 229, 255);
+    --primary-bg-2:rgb(247, 255, 251);
+    --primary-bg-3:rgb(255, 214, 251);
+    --final-speed:rgb(89, 89, 89);
+    --primary-text:rgb(76, 175, 80);
+    --texture:url("/bg6.png") no-repeat center center / cover;
+  }
+}
+
+body{
+  background: radial-gradient(circle at top,var(--primary-bg-3),var(--primary-bg-2),var(--primary-bg-1));
+  overflow-x: hidden;
+}
