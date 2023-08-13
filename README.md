@@ -62,7 +62,7 @@ For a more accurate speed measurement, dedicated internet speed testing tools ar
 
 In summary, both methods can give you insights into your internet speed, but neither is a perfect representation of the actual speed you might experience in all situations. If you're looking for accurate speed measurements, consider using specialized speed testing services or apps.
 
-## Getting Started
+# Getting Started
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
