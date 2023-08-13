@@ -95,8 +95,18 @@ const Home: NextPage = () => {
         <span className={styles.speed}>{navigatorSpeed} Mbps</span>
         <h3>Navigator API</h3>
         <footer className={styles.footer}>
-          Made with ❤️ | &copy; <a href="https://ashish-portfolio-ofc.vercel.app/" target="_blank">ASHISH</a> | <a href="https://github.com/dev-AshishRanjan/AetherNex" target="_blank">Github</a>
-      </footer>
+          Made with ❤️ | &copy;{" "}
+          <a href="https://ashish-portfolio-ofc.vercel.app/" target="_blank">
+            ASHISH
+          </a>{" "}
+          |{" "}
+          <a
+            href="https://github.com/dev-AshishRanjan/AetherNex"
+            target="_blank"
+          >
+            Github
+          </a>
+        </footer>
       </section>
       <span className={styles.designSpeed}>{navigatorSpeed}</span>
     </main>
