@@ -74,9 +74,9 @@ const Home: NextPage = () => {
     <main className={styles.bg}>
       <h2 className={styles.logo}>AetherNex</h2>
       <h2 className={styles.sideLogo}>AetherNex</h2>
-        <section className={styles.speedSection}>
+        <section className={styles.speedSection} >
           {/* <h3>Calculated Speed (Image Download)</h3> */}
-          <span className={`${styles.speed} && ${(imgLoaded === true ? styles.loaded : styles.loading)}`}>
+          <span className={`${styles.speed} && ${(imgLoaded === true ? styles.loaded : styles.loading)}`} onClick={()=>{window.location.reload()}} title="click to refresh" >
             {imageSpeed}
           </span>
           <h3>Image Download</h3>
