@@ -1,5 +1,5 @@
-import type { NextPage } from 'next';
-import styles from '../styles/Home.module.scss';
+import type { NextPage } from "next";
+import styles from "../styles/Home.module.scss";
 import { useEffect, useState } from "react";
 
 interface ExtendedNavigator extends Navigator {
@@ -48,9 +48,9 @@ const Home: NextPage = () => {
     const showResults = () => {
       const duration = (endTime - startTime) / 1000;
       const bitsLoaded = downloadSize * 8;
-      const speedBps:string|any = (bitsLoaded / duration).toFixed(2);
-      const speedKbps:string|any = (speedBps / 1024).toFixed(2);
-      const speedMbps:string|any = (speedKbps / 1024).toFixed(2);
+      const speedBps: string | any = (bitsLoaded / duration).toFixed(2);
+      const speedKbps: string | any = (speedBps / 1024).toFixed(2);
+      const speedMbps: string | any = (speedKbps / 1024).toFixed(2);
       setImageSpeed(speedMbps + " Mbps"); // Set the image download speed
     };
   };
@@ -61,7 +61,8 @@ const Home: NextPage = () => {
     MeasureConnectionSpeed();
 
     // Use navigator.connection to get estimated internet speed
-    const connection: Connection | any = (navigator as ExtendedNavigator).connection;
+    const connection: Connection | any = (navigator as ExtendedNavigator)
+      .connection;
     if (connection.downlink) {
       const estimatedSpeed = connection.downlink;
       setNavigatorSpeed(estimatedSpeed.toFixed(2));
@@ -74,21 +75,29 @@ const Home: NextPage = () => {
     <main className={styles.bg}>
       <h2 className={styles.logo}>AetherNex</h2>
       <h2 className={styles.sideLogo}>AetherNex</h2>
-        <section className={styles.speedSection} >
-          {/* <h3>Calculated Speed (Image Download)</h3> */}
-          <span className={`${styles.speed} && ${(imgLoaded === true ? styles.loaded : styles.loading)}`} onClick={()=>{window.location.reload()}} title="click to refresh" >
-            {imageSpeed}
-          </span>
-          <h3>Image Download</h3>
-        </section>
-        <section className={styles.speedSection}>
-          {/* <h3>Estimated Speed (Navigator API)</h3> */}
-          <span className={styles.speed}>{navigatorSpeed} Mbps</span>
-          <h3>Navigator API</h3>
-        </section>
-        <span className={styles.designSpeed}>{navigatorSpeed}</span>
+      <section className={styles.speedSection}>
+        {/* <h3>Calculated Speed (Image Download)</h3> */}
+        <span
+          className={`${styles.speed} && ${
+            imgLoaded === true ? styles.loaded : styles.loading
+          }`}
+          onClick={() => {
+            window.location.reload();
+          }}
+          title="click to refresh"
+        >
+          {imageSpeed}
+        </span>
+        <h3>Image Download</h3>
+      </section>
+      <section className={styles.speedSection}>
+        {/* <h3>Estimated Speed (Navigator API)</h3> */}
+        <span className={styles.speed}>{navigatorSpeed} Mbps</span>
+        <h3>Navigator API</h3>
+      </section>
+      <span className={styles.designSpeed}>{navigatorSpeed}</span>
     </main>
   );
-}
+};
 
 export default Home;

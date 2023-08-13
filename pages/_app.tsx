@@ -1,5 +1,5 @@
-import '../styles/globals.scss';
-import type { AppProps } from 'next/app';
+import "../styles/globals.scss";
+import type { AppProps } from "next/app";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -22,9 +22,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="shortcut icon" href="/icons/icon_512.png" />
         <link rel="apple-touch-icon" href="/icons/icon_512.png"></link>
       </Head>
-        <Component {...pageProps} />
+      <Component {...pageProps} />
     </>
   );
 }
 
-export default MyApp
+export default MyApp;
