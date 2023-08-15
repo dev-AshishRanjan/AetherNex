@@ -109,11 +109,23 @@
       .speed {
         font-size: 3rem;
       }
+      .speedOverflow {
+        width: 10ch;
+        text-align: center;
+        // overflow-wrap: break-word;
+        color: var(--primary-text) !important;
+        z-index: -10 !important;
+      }
       .footer {
         display: none;
       }
     }
   }
+}
+
+.speedOverflow {
+  color: var(--primary-text) !important;
+  z-index: -10 !important;
 }
 
 // error page

@@ -63,10 +63,16 @@ const Home: NextPage = () => {
     // Use navigator.connection to get estimated internet speed
     const connection: Connection | any = (navigator as ExtendedNavigator)
       .connection;
-    if (connection.downlink) {
-      const estimatedSpeed = connection.downlink;
-      setNavigatorSpeed(estimatedSpeed.toFixed(2));
-    } else {
+    try {
+      if (connection.downlink) {
+        const estimatedSpeed = connection.downlink;
+        setNavigatorSpeed(estimatedSpeed.toFixed(2));
+      } else {
+        setNavigatorSpeed("NS");
+      }
+    } catch (e) {
+      console.log("Error getting network information");
+      console.log({ e });
       setNavigatorSpeed("NS");
     }
   }, []);
@@ -92,7 +98,15 @@ const Home: NextPage = () => {
       </section>
       <section className={styles.speedSection}>
         {/* <h3>Estimated Speed (Navigator API)</h3> */}
-        <span className={styles.speed}>{navigatorSpeed} Mbps</span>
+        <span
+          className={`${styles.speed} && ${
+            navigatorSpeed === "NS" ? styles.speedOverflow : null
+          }`}
+        >
+          {navigatorSpeed !== "NS"
+            ? navigatorSpeed + " Mbps"
+            : "Service Not Found"}
+        </span>
         <h3>Navigator API</h3>
         <footer className={styles.footer}>
           Made with ❤️ | &copy;{" "}
