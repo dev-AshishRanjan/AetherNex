@@ -1,10 +1,9 @@
 version: 2
 updates:
-
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
     labels:
-        - 📦 dependencies
+      - 📦 dependencies
     directory: "/"
     commit-message:
       prefix: "chore(deps)[github-actions]"
@@ -14,7 +13,7 @@ updates:
   # Maintain dependencies for npm
   - package-ecosystem: "npm"
     labels:
-        - 📦 dependencies
+      - 📦 dependencies
     directory: "/"
     commit-message:
       prefix: "chore(deps)[npm]"
