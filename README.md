@@ -1,4 +1,4 @@
-![AetherNex](https://socialify.git.ci/dev-AshishRanjan/AetherNex/image?description=1&descriptionEditable=A%20place%20for%20Developers&forks=1&issues=1&language=1&name=1&owner=1&pulls=1&stargazers=1&theme=light)
+![AetherNex](https://socialify.git.ci/dev-AshishRanjan/AetherNex/image?description=1&descriptionEditable=Introducing%20AetherNex%2C%20a%20cutting-edge%20solution%20that%20merges%20advanced%20browser%20technology%20and%20meticulous%20measurement%20strategies&font=KoHo&forks=1&issues=1&language=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto)
 
 <div align="center">
  <p>
